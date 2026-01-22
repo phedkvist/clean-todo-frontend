@@ -125,31 +125,33 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ```bash
 # List all todos
-npm run todo list
+npm run todo -- list
 
 # Add a new todo
-npm run todo add "Your task title"
+npm run todo -- add "Your task title"
 
 # Add a todo with description
-npm run todo add "Task title" -d "Task description"
+npm run todo -- add "Task title" -d "Task description"
 
 # Mark a todo as completed
-npm run todo complete <todo-id>
+npm run todo -- complete <todo-id>
 
 # Mark as incomplete
-npm run todo complete <todo-id> --uncomplete
+npm run todo -- complete <todo-id> --uncomplete
 
 # Update a todo
-npm run todo update <todo-id> --title "New title"
-npm run todo update <todo-id> --description "New description"
+npm run todo -- update <todo-id> --title "New title"
+npm run todo -- update <todo-id> --description "New description"
 
 # Delete a todo (with confirmation)
-npm run todo delete <todo-id> --yes
+npm run todo -- delete <todo-id> --yes
 
 # Filter todos
-npm run todo list --active      # Show only active todos
-npm run todo list --completed   # Show only completed todos
+npm run todo -- list --active      # Show only active todos
+npm run todo -- list --completed   # Show only completed todos
 ```
+
+**Note**: The `--` separator is required to pass flags to the CLI (not to npm)
 
 **Note**: The CLI uses FileSystemRepository and stores todos in `~/.clean-todos.json`
 
