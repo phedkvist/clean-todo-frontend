@@ -1,4 +1,4 @@
-import { Todo } from '../../domain/entities/Todo';
+import { Todo } from '../../domain/entities/Todo.js';
 
 /**
  * Repository interface for Todo persistence

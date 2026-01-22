@@ -1,5 +1,5 @@
-import { Todo } from '../../domain/entities/Todo';
-import { ITodoRepository } from '../../use-cases/interfaces/ITodoRepository';
+import { Todo } from '../../domain/entities/Todo.js';
+import { ITodoRepository } from '../../use-cases/interfaces/ITodoRepository.js';
 import * as fs from 'fs/promises';
 import * as path from 'path';
 import * as os from 'os';

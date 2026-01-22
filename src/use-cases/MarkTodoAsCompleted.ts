@@ -1,6 +1,6 @@
-import { Todo } from '../domain/entities/Todo';
-import { TodoNotFoundError } from '../domain/errors/TodoErrors';
-import { ITodoRepository } from './interfaces/ITodoRepository';
+import { Todo } from '../domain/entities/Todo.js';
+import { TodoNotFoundError } from '../domain/errors/TodoErrors.js';
+import { ITodoRepository } from './interfaces/ITodoRepository.js';
 
 export interface MarkTodoAsCompletedInput {
   id: string;

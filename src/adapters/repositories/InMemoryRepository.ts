@@ -1,5 +1,5 @@
-import { Todo } from '../../domain/entities/Todo';
-import { ITodoRepository } from '../../use-cases/interfaces/ITodoRepository';
+import { Todo } from '../../domain/entities/Todo.js';
+import { ITodoRepository } from '../../use-cases/interfaces/ITodoRepository.js';
 
 /**
  * In-memory implementation of ITodoRepository

@@ -1,5 +1,5 @@
-import { Todo } from '../../domain/entities/Todo';
-import { TodoPresenter, TodoViewModel } from './TodoPresenter';
+import { Todo } from '../../domain/entities/Todo.js';
+import { TodoPresenter, TodoViewModel } from './TodoPresenter.js';
 
 /**
  * View model for a list of Todos with statistics

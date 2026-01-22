@@ -1,5 +1,5 @@
-import { Todo } from '../domain/entities/Todo';
-import { ITodoRepository } from './interfaces/ITodoRepository';
+import { Todo } from '../domain/entities/Todo.js';
+import { ITodoRepository } from './interfaces/ITodoRepository.js';
 
 export interface CreateTodoInput {
   title: string;

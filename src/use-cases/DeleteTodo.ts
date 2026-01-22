@@ -1,5 +1,5 @@
-import { TodoNotFoundError } from '../domain/errors/TodoErrors';
-import { ITodoRepository } from './interfaces/ITodoRepository';
+import { TodoNotFoundError } from '../domain/errors/TodoErrors.js';
+import { ITodoRepository } from './interfaces/ITodoRepository.js';
 
 export interface DeleteTodoInput {
   id: string;

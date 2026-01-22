@@ -1,5 +1,5 @@
-import { Todo } from '../domain/entities/Todo';
-import { ITodoRepository } from './interfaces/ITodoRepository';
+import { Todo } from '../domain/entities/Todo.js';
+import { ITodoRepository } from './interfaces/ITodoRepository.js';
 
 export interface GetAllTodosInput {
   filterCompleted?: boolean; // undefined = all, true = only completed, false = only active

@@ -1,7 +1,7 @@
-import { TodoId } from '../value-objects/TodoId';
-import { TodoTitle } from '../value-objects/TodoTitle';
-import { TodoDescription } from '../value-objects/TodoDescription';
-import { InvalidTodoError } from '../errors/TodoErrors';
+import { TodoId } from '../value-objects/TodoId.js';
+import { TodoTitle } from '../value-objects/TodoTitle.js';
+import { TodoDescription } from '../value-objects/TodoDescription.js';
+import { InvalidTodoError } from '../errors/TodoErrors.js';
 
 /**
  * Todo Entity

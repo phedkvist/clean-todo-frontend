@@ -1,4 +1,4 @@
-import { Todo } from '../../domain/entities/Todo';
+import { Todo } from '../../domain/entities/Todo.js';
 
 /**
  * View model for a single Todo

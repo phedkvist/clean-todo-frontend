@@ -86,7 +86,10 @@ src/
     │   ├── main.tsx
     │   └── styles.css
     ├── vue/                  # (Coming soon)
-    └── cli/                  # (Coming soon)
+    └── cli/
+        ├── commands/
+        ├── formatters/
+        └── index.ts
 ```
 
 ## Getting Started
@@ -118,6 +121,38 @@ npm run preview:react
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
 
+### Running the CLI
+
+```bash
+# List all todos
+npm run todo list
+
+# Add a new todo
+npm run todo add "Your task title"
+
+# Add a todo with description
+npm run todo add "Task title" -d "Task description"
+
+# Mark a todo as completed
+npm run todo complete <todo-id>
+
+# Mark as incomplete
+npm run todo complete <todo-id> --uncomplete
+
+# Update a todo
+npm run todo update <todo-id> --title "New title"
+npm run todo update <todo-id> --description "New description"
+
+# Delete a todo (with confirmation)
+npm run todo delete <todo-id> --yes
+
+# Filter todos
+npm run todo list --active      # Show only active todos
+npm run todo list --completed   # Show only completed todos
+```
+
+**Note**: The CLI uses FileSystemRepository and stores todos in `~/.clean-todos.json`
+
 ## Key Features
 
 ### Domain Layer Features
@@ -136,7 +171,8 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 - ✅ Mark todos as completed/incomplete
 - ✅ Delete todos
 - ✅ Statistics (total, active, completed, progress %)
-- ✅ Persistent storage (localStorage in React)
+- ✅ Persistent storage (localStorage in React, file system in CLI)
+- ✅ CLI interface with colored output and table formatting
 
 ## How Clean Architecture is Demonstrated
 
@@ -232,10 +268,14 @@ This architecture is ideal for:
 
 ## Next Steps
 
+### Completed Implementations
+
+- [x] React UI with hooks and context
+- [x] CLI implementation with Commander and Chalk
+
 ### Planned Implementations
 
-- [ ] Vue.js UI (Phase 5)
-- [ ] CLI implementation (Phase 6)
+- [ ] Vue.js UI
 - [ ] Unit tests for domain layer
 - [ ] Integration tests for use cases
 - [ ] E2E tests for React UI

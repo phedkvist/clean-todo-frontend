@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "NodeNext",
+    "lib": ["ES2020", "DOM"],
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "outDir": "./dist/cli",
+    "rootDir": "./src",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/domain/**/*",
+    "src/use-cases/**/*",
+    "src/adapters/**/*",
+    "src/ui/cli/**/*"
+  ],
+  "exclude": [
+    "src/ui/react/**/*",
+    "src/ui/vue/**/*",
+    "node_modules"
+  ]
+}
